@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
-import Car from './Car';
+import Garage from './Garage';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Car />
+    <Garage color="red" />
   </React.StrictMode>,
   document.getElementById('root')
 );

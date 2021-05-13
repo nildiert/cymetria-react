@@ -1,14 +1,19 @@
 import React from 'react';
 
+
 class Car extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
-        return <h2>Hi, I am a Car!</h2>
+        return <h2>Hola, soy un {this.props.name} {this.props.model} !</h2>
     }
 }
 
-// function Car() {
-//     return <h2>Hi, I am a Car!</h2>
-// }
+
+
+
 
 export default Car;
 
