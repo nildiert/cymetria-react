@@ -6,8 +6,10 @@ class Header extends React.Component {
         this.state = {favoriteColor: "Red"};
     }
 
-    static getDerivedStateFromProps(props, state) {
-        return {favoriteColor: props.favcol };
+    componentDidMount() {
+        setTimeout(() =>{
+            this.setState({favoriteColor: "Yellow"})
+        }, 1000);
     }
 
     render() {
