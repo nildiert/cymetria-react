@@ -7,12 +7,14 @@ import Car from './Car';
 
 class Garage extends React.Component {
     render() {
-        const carinfo = {name: "Ford", model: "Mustang"};
+        const carinfo = {
+            name: "Ford",
+            model: "Mustang"};
         return (
         <div>
             <h1>Quien vive en mi garage?</h1>
 
-            <Car model="Mustang" />
+            <Car carinfo={carinfo} />
         </div>
         )
     }
